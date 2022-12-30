@@ -7,7 +7,7 @@ const Discover = () => {
   const dispatch = useDispatch();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { data, isFetching, error } = useGetTopChartsQuery();
-  if (isFetching) return <Loader title="Loading Song..." />;
+  if (isFetching) return <Loader title="Loading Songs..." />;
   const genreTitles = "pop";
   return (
     <div className="flex flex-col">
